@@ -1,0 +1,24 @@
+name: "Yeni bir şikayet oluştur"
+description: "Yeni bir şikayet bildirimi oluşturun."
+title: "[Şikayet]: "
+labels: ["şikayet"]
+assignees: []
+
+body:
+  - type: input
+    id: brand
+    attributes:
+      label: "Marka Adı"
+      description: "Boykot edilen veya alternatif olarak önerilen marka adı nedir?"
+      placeholder: "Örn: X Şirketi"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: "Sebep"
+      description: "Bu şikayeti oluşturma nedeninizi açıklayın."
+      placeholder: "Neden şikayet öneriyorsunuz?"
+    validations:
+      required: true

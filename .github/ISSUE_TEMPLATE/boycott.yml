@@ -1,0 +1,42 @@
+name: "Yeni bir boykot"
+description: "Yeni bir boykot bildirimi oluşturun."
+title: "[Boykot]: "
+labels: ["boykot"]
+assignees: []
+
+body:
+  - type: input
+    id: brand
+    attributes:
+      label: "Marka Adı"
+      description: "Hangi marka hakkında rapor oluşturuyorsunuz?"
+      placeholder: "Örn: X Şirketi"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: "Sebep"
+      description: "Bu boykotu oluşturma nedeninizi açıklayın."
+      placeholder: "Neden boykot öneriyorsunuz?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: proof
+    attributes:
+      label: "Kanıt URL’ler"
+      description: "İlgili kaynaklar veya haber bağlantıları ekleyin."
+      placeholder: "https://orneklink.com"
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternatifler"
+      description: "Önerdiğiniz alternatif markalar veya çözümler (isteğe bağlı)."
+      placeholder: "Örn: Y markasını kullanabilirsiniz."
+    validations:
+      required: false
